@@ -1,0 +1,93 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(110px, auto) repeat(5, 75px);
+  gap: 3px;
+  padding: 20px;
+  background-color: rgb(112, 112, 112);
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.output {
+  grid-column: 1/-1;
+  background-color: rgb(102, 149, 102);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: 2rem;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.displayPrev {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+}
+
+.displayCurr {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+}
+
+.btn {
+  color: white;
+  font-size: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.operand-btn {
+  background-color: rgb(40, 40, 40);
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ac {
+  background-color: rgb(47, 47, 218);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.solar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background: rgb(140, 140, 50);
+  gap: 1px;
+  margin: 3px;
+}
+.in-solar {
+  background-color: rgb(70, 70, 70);
+  height: 100%;
+  width: 100%;
+}
+.num {
+  background-color: darkgray;
+}
+
+.equal {
+  background-color: orange;
+}

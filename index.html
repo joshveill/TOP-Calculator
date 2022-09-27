@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Texas Instruments Solar-X</h1>
+    <main>
+      <div class="container">
+        <div class="output">
+          <div class="displayPrev" data-previous></div>
+          <div class="displayCurr" data-current>0</div>
+        </div>
+
+        <button class="operand-btn btn ac" data-clear>AC</button>
+        <div class="solar">
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+          <div class="in-solar"></div>
+        </div>
+        <button class="operand-btn btn" data-operand>/</button>
+
+        <button class="num btn" value="7" data-number>7</button>
+        <button class="num btn" value="8" data-number>8</button>
+        <button class="num btn" value="9" data-number>9</button>
+
+        <button class="operand-btn btn" data-operand>*</button>
+
+        <button class="num btn" value="4" data-number>4</button>
+        <button class="num btn" value="5" data-number>5</button>
+        <button class="num btn" value="6" data-number>6</button>
+
+        <button class="operand-btn btn" data-operand>-</button>
+
+        <button class="num btn" value="1" data-number>1</button>
+        <button class="num btn" value="2" data-number>2</button>
+        <button class="num btn" value="3" data-number>3</button>
+
+        <button class="operand-btn btn" data-operand>+</button>
+
+        <button class="zero num btn" value="0" data-number>0</button>
+
+        <button class="num btn" data-decimal>.</button>
+        <button class="equal btn" data-equal>=</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
